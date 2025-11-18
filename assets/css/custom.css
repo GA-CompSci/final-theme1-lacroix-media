@@ -1,0 +1,23 @@
+/* ----- Color Variables ----- */
+:root {
+  --carbon-black: #222222;
+  --vivid-royal: #3626A7;
+  --white: #FFFFFF;
+  --grey-royal: #848586;
+}
+
+/* ----- Background Colors ----- */
+.bg-carbon-black { background-color: var(--carbon-black); }
+.bg-vivid-royal  { background-color: var(--vivid-royal); }
+.bg-white        { background-color: var(--white); }
+.bg-grey-royal   { background-color: var(--grey-royal); }
+
+/*****fonts*****/
+
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Playfair Display", serif;
+
+}
+
+

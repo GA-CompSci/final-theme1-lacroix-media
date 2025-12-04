@@ -20,4 +20,8 @@ h1,h2,h3,h4,h5,h6 {
 
 }
 
+/* ------------ Button Primary ------------ */
+.button.button-xl.button-rounded.button-white-2.mt-4.mt-lg-5 {
+    margin-top: 750px !important;
+}
 

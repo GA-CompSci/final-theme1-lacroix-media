@@ -25,3 +25,12 @@ h1,h2,h3,h4,h5,h6 {
     margin-top: 750px !important;
 }
 
+    /* Styling for the section with an ID */
+    #myUniqueSection {
+        background-color: #3626A7; 
+        padding: 20px; }
+
+    /* Styling for the div with a class */
+    .highlighted-section {
+        background-color:#FFFFFF; 
+        margin: 15px 0; }

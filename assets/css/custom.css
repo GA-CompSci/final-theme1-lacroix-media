@@ -20,17 +20,87 @@ h1,h2,h3,h4,h5,h6 {
 
 }
 
-/* ------------ Button Primary ------------ */
 .button.button-xl.button-rounded.button-white-2.mt-4.mt-lg-5 {
     margin-top: 750px !important;
+
+    /* Dark navy base */
+    background: linear-gradient(135deg, #0a1f44, #102f6b);
+    color: #ffffff;
+    border-radius: 999px;
+    padding: 18px 42px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+
+    position: relative;
+    overflow: hidden;
+
+    box-shadow: 0 10px 28px rgba(10, 31, 68, 0.55);
+    transition: 
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
 }
+
+/* White shine layer */
+.button.button-xl.button-rounded.button-white-2.mt-4.mt-lg-5::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -130%;
+    width: 130%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.75),
+        transparent
+    );
+}
+
+/* Glow on hover */
+.button.button-xl.button-rounded.button-white-2.mt-4.mt-lg-5:hover {
+    box-shadow:
+        0 0 18px rgba(90, 140, 255, 0.55),
+        0 14px 40px rgba(10, 31, 68, 0.8);
+    transform: translateY(-2px);
+}
+
+/* Tap / click shine */
+.button.button-xl.button-rounded.button-white-2.mt-4.mt-lg-5:active::before {
+    animation: navy-shine 0.5s ease-out;
+}
+
+/* Press-down feel */
+.button.button-xl.button-rounded.button-white-2.mt-4.mt-lg-5:active {
+    transform: scale(0.97);
+}
+
+/* Shine animation */
+@keyframes navy-shine {
+    from { left: -130%; }
+    to   { left: 130%; }
+}
+
 
     /* Styling for the section with an ID */
     #myUniqueSection {
-        background-color: #3626A7; 
+        background-color: #102f6b; 
         padding: 20px; }
 
     /* Styling for the div with a class */
     .highlighted-section {
-        background-color:#FFFFFF; 
+        background-color: linear-gradient(135deg, #0a1f44, #102f6b);
         margin: 15px 0; }
+
+section-lg bg-dark {
+    /* Match CTA button background */
+    background: linear-gradient(135deg, #0a1f44, #102f6b);
+    color: #ffffff; /* ensures text is readable */
+    padding: 60px 20px;
+}
+
+
+section-lg bg-dark {
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(10, 31, 68, 0.5);
+}
+
